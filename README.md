@@ -90,6 +90,38 @@ reboot
 Now the phone will reboot.
 
 Open Magisk manager again and proceed to MagiskHide. Search for the entries "microG DroidGuard Helper", "microG Services Core" and "microG Services Framework Proxy". Click on the name (not the checkbox!) of each and disable the appearing sliders from all these apps mentioned.
-Now go to the module section of Magisk manager again and install "MagiskHide Props Config" from the Magisk repository.
+Reboot again.
+Open the MicroG settings app, do the self check and grant all requested permissions and optimizations.
+There is a [bug](https://github.com/microg/GmsCore/issues/1011) in the current MicroG version.
+As a workaround you can put com.google.android.gsf on the deviceidle whitelist:
+```
+adb shell
+su
+dumpsys deviceidle whitelist +com.google.android.gsf
+```
+Delete all data from Google Play Store in the settings of the app.
+Last step to finish MicroG setup: Open Google Play and login to your google account.
+
+
+# Get apps auto-starting after boot
+The BV9900 Pro software has a bug with autostarting apps and widgets after boot. If you use an alarm clock and the phone is rebooted, the alarm clock will not ring any more.
+Also most messanger apps won't work properly. This could be fixed by setting ro.freeme_freemanager and ro.hct_autostart_manager to 0 in build.prop. Instead of editing buid.prop, we will use the Magisk plugin "MagiskHide Props Config".
+Go to the module section of Magisk manager again and install "MagiskHide Props Config" from the Magisk repository.
 Reboot the mobile phone.
 Check if MagiskHide Props Config is enabled. If not, enable it and reboot again.
+
+Open the shell on the phone as root again:
+```
+adb shell
+su
+```
+Now let's set the first property correct by executing
+``
+props ro.freeme_freemanager 0
+``
+The plugin will ask, at which state the property should be set. Choose _2 - post-fs-data_.
+Now repeat again with
+``
+props ro.hct_autostart_manager 0
+``
+and choose _2 - post-fs-data_. again.
