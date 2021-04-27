@@ -37,7 +37,7 @@ The readback will take some time.
 Go to the settings, "About phone" and press the Build number at least 10 times in a row.
 Now head back to the settings menu -> System. There you will find the new entry "Developer options".
 Here you can unlock the bootloader by activating "OEM unlocking" and also enable "USB debugging".
-Open terminal and run **adb reboot bootloader** to enter fastboot mode. Alternatively you can switch off the phone and press Volume Up + Power to enter a boot menu. Chose fastboot mode with Volume Up button here and confirm that with Volume Down.
+Open terminal and run **adb reboot bootloader** to enter fastboot mode. Alternatively you can switch off the phone and press Volume Up + Power to enter a boot menu. Choose fastboot mode with Volume Up button here and confirm that with Volume Down.
 Open terminal on your PC and run **fastboot flashing unlock**
 Your device will wipe all your userdata now.
 Go back to developers section and make sure "USB debugging" is still enabled.
@@ -48,8 +48,8 @@ I recommend [this guide](https://www.getdroidtips.com/flash-stock-firmware-using
 
 # Rooting BV9900 Pro with Magisk
 Boot to the Android system again.
-Download the [https://github.com/topjohnwu/Magisk/releases](Magisk-Manager APK) and install it with **adb install Magisk-v22.1.apk** (you have to change the version number accordingly to your downloaded file).
-Put the boot.img (from backup or from downloaded firmware) to your device memory (r.g. internal SD card). Make sure that the boot.img fits to your installed firmware version!
+Download the [https://github.com/topjohnwu/Magisk/releases](Magisk-Manager APK) and install it with ``adb install Magisk-v22.1.apk`` (you have to change the version number accordingly to your downloaded file).
+Put the boot.img (from backup or from downloaded firmware) to your device memory (e.g. internal SD card). Make sure that the boot.img fits to your installed firmware version!
 Launch Magisk manager and patch the boot image. You can easily follow [this guide](https://www.droidwin.com/patch-stock-boot-image-flash-magisk/).
 Copy the patched boot.img to your PC again and restart to Fastboot mode.
 
@@ -78,12 +78,12 @@ su
 cp external_sd/sdcard0/.nanodroid-setup /data/
 ```
 Open Magisk Manager, proceed to the modules section and click **Install from storage.**
-Chose the Nanodroid-patcher zip file and flash it.
+Select the Nanodroid-patcher zip file and flash it.
 Reboot the phone.
 Make sure the module "NanoDroid Patcher" is enabled in the Magisk module section. If not, enable it and reboot again.
 If you want, you can use [Signature Spoofing Checker](https://f-droid.org/de/packages/lanchon.sigspoof.checker/) to check, if signature spoofing is enabled now.
 ## Install Nanodroid 
-Again, open the Magisk module section and click **Install from storage** again. This time choose the Nanodroid-full-package and flash it.
+Again, open the Magisk module section and click **Install from storage** again. This time select the Nanodroid-full-package and flash it.
 Reboot again, check if it is enabled and if not enable it and reboot again.
 ## Remove Stock Google Services
 To remove the stock google services and use MicroG in future, enter the following commands (and grant root access, when requested):
