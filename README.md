@@ -1,4 +1,4 @@
-# BV9900Pro-optimization
+# Optimization of Blackview BV9900 Pro
 The Blackview BV9900 Pro is a very good outdoor smartphone with very good hardware specifications.
 Unfortunately the software is not running very well. This is a guide, how I got my phone properly working and got rid of most software proplems.
 Anyhow, I am not responsible, if you will damage your phone! You are continuing at your own risk!
@@ -10,8 +10,15 @@ Blackview uploaded this version to MEGA and it can be found here: [Download](htt
 Since you should not trust any random links, I will give you the [source here](https://bbs.blackview.hk/viewtopic.php?f=300&t=538469&start=170).
 Before you flash this firmware, dial \*#8615# first and check, if your fingerprint shows _Goodix_ or _sunwave_. If it shows _Goodix_ stop now and do not follow this guide any more, since fingerprint will stop working, if you upgrade to Android 10 and I am not sure, if this guid will work for Android 9!
 
+# Prerequirements
+Make sure you have installed and working adb and fastboot!
+If you use Ubuntu, you can easily istall it by running
+```
+sudo apt -y install adb fastboot
+```
+
 # Installing SP-Flash tool
-First of all, you need to install SP-Flash tool and the right Scatter file (which can be found in the firmware).
+First of all, you need to install [SP-Flash tool](https://spflashtool.com/download/) and have the right Scatter file available (which can be found in the firmware).
 If you want to backup your device, open option.ini and in the \[ReadBack\] section change _ShowByScatter_ to true:
 
 ```
