@@ -48,7 +48,7 @@ I recommend [this guide](https://www.getdroidtips.com/flash-stock-firmware-using
 
 # Rooting BV9900 Pro with Magisk
 Boot to the Android system again.
-Download the [https://github.com/topjohnwu/Magisk/releases](Magisk-Manager APK) and install it with ``adb install Magisk-v22.1.apk`` (you have to change the version number accordingly to your downloaded file).
+Download the [Magisk-Manager APK](https://github.com/topjohnwu/Magisk/releases) and install it with ``adb install Magisk-v22.1.apk`` (you have to change the version number accordingly to your downloaded file).
 Put the boot.img (from backup or from downloaded firmware) to your device memory (e.g. internal SD card). Make sure that the boot.img fits to your installed firmware version!
 Launch Magisk manager and patch the boot image. You can easily follow [this guide](https://www.droidwin.com/patch-stock-boot-image-flash-magisk/).
 Copy the patched boot.img to your PC again and restart to Fastboot mode.
@@ -70,8 +70,7 @@ Nanodroid needs signature spoofing, if you want to use the Google Play Store.
 Download the last version of NanoDroid-patcher (e.g. _NanoDroid-patcher-23.1.2.20210117.zip_) and the full-package (e.g. _NanoDroid-23.1.2.20210117.zip_) from [Nanodroid download page](https://downloads.nanolx.org/NanoDroid/Stable/).
 Put both files on your android device (e.g. internal SD).
 Download [.nanodroid-setup](./resources/.nanodroid-setup) and [modify](https://gitlab.com/Nanolx/NanoDroid/-/blob/master/doc/AlterInstallation.md) it to your needs.
-Explanation of the parameters can be found [here](https://gitlab.com/Nanolx/NanoDroid/-/blob/master/doc/AlterInstallation.md).
-Put that file to the sd card. To make sure nanodroid will find the .nanodroid-setup, you can copy this file to /data, too. Use the following commands (grant root access, when requested):
+Put that file to the internal sd card. To make sure nanodroid will find the .nanodroid-setup, you can copy this file to /data, too. Use the following commands (grant root access, when requested):
 ```
 adb shell
 su
