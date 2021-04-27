@@ -63,3 +63,9 @@ Download the last version of NanoDroid-patcher (e.g. _NanoDroid-patcher-23.1.2.2
 Put both files on your android device (e.g. internal SD).
 Download [.nanodroid-setup](./resources/.nanodroid-setup) and [modify](https://gitlab.com/Nanolx/NanoDroid/-/blob/master/doc/AlterInstallation.md) it to your needs.
 Explanation of the parameters can be found [here](https://gitlab.com/Nanolx/NanoDroid/-/blob/master/doc/AlterInstallation.md).
+Put that file to the sd card. To make sure nanodroid will find the .nanodroid-setup, you can copy this file to /data, too. Use the following commands:
+``
+adb shell
+su
+cp external_sd/sdcard0/.nanodroid-setup /data/
+``
