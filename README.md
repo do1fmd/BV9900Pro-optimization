@@ -8,7 +8,7 @@ If you follow this guide, you hopefully will get a working rooted BV9900 Pro wit
 In this guide I am working with official firmware version BV9900Pro_EEA_S900AA_V1.0_20201105V07.
 Blackview uploaded this version to MEGA and it can be found here: [Download](https://mega.nz/file/vLAnzQDb#AASpRKEQwCOhKTNXtxAPVX2nocLnCZgUdgeFxwDfzg4)
 Since you should not trust any random links, I will give you the [source here](https://bbs.blackview.hk/viewtopic.php?f=300&t=538469&start=170).
-Before you flash this firmware, dial \*#8615# first and check, if your fingerprint shows _Goodix_ or _sunwave_. If it shows _Goodix_ stop now and do not follow this guide any more, since fingerprint will stop working, if you upgrade to Android 10.
+Before you flash this firmware, dial \*#8615# first and check, if your fingerprint shows _Goodix_ or _sunwave_. If it shows _Goodix_ stop now and do not follow this guide any more, since fingerprint will stop working, if you upgrade to Android 10 and I am not sure, if this guid will work for Android 9!
 
 # Installing SP-Flash tool
 First of all, you need to install SP-Flash tool and the right Scatter file (which can be found in the firmware).
@@ -37,7 +37,7 @@ Go back to developers section and make sure "USB debugging" is still enabled.
 
 # Update Firmware (not necessary)
 You can now update (and also downgrade) the firmware of your BV9900 Pro with SP Flash tools.
-I recommend [https://www.getdroidtips.com/flash-stock-firmware-using-sp-flash-tool/](this guide), if you want to flash a new firmware.
+I recommend [this guide](https://www.getdroidtips.com/flash-stock-firmware-using-sp-flash-tool/), if you want to flash a different firmware.
 
 # Rooting BV9900 Pro with Magisk
 Boot to the Android system again.
