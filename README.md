@@ -164,6 +164,10 @@ Type in the apk name (in brackets in my list) and you can open the android setti
 To debloat the other apps, you have two ways.
 With nanodroid-overlay you can put an empty overlay over the system apps. In that way Android cannot "see" the app any more.
 I took this way. The other way is described below by uninstalling the app for user 0.
+
+Honestly, I kept some apps, which I want to use, like the calculator and Flir app.
+So the lists below are far from complete, but a good start.
+
 ## Using nanodroid-overlay
 This method is only working, if you installed Nanodroid as described above.
 
