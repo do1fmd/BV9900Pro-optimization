@@ -12,7 +12,7 @@ Before you flash this firmware, dial \*#8615# first and check, if your fingerpri
 
 # Installing SP-Flash tool
 First of all, you need to install SP-Flash tool and the right Scatter file (which can be found in the firmware).
-I would recommend to open option.ini and in the \[ReadBack\] section change _ShowByScatter_ to true:
+If you want to backup your device, open option.ini and in the \[ReadBack\] section change _ShowByScatter_ to true:
 
 ```
 [ReadBack]
@@ -141,7 +141,7 @@ Instead of deleting system apps directly, I would recommend to deactivate them i
 ## Deactivate unwanted apps
 First I will give a list, which apps can be simply deactivated in the Android settings.
 If you cannot find the app (e.g. your phone is not in English), you can use the app [apps_Packages Info from F-Droid](https://f-droid.org/de/packages/com.oF2pks.applicationsinfo/).
-Type in the apk name (in brackets in my list) and you can open the android settings for the searched app.
+Type in the apk name (you find them in \[brackets] in my list) and you can open the android settings of the searched app.
  
 - Youtube (if you don't want to use Youtube vanced) \[com.google.android.youtube]
 - (Google) Assistant \[com.google.android.apps.googleassistant]
@@ -200,14 +200,24 @@ nanodroid-overlay -a ATMWifiMeta
 nanodroid-overlay -a ManagedProvisioning
 nanodroid-overlay -a FaceUnlock
 ```
-So far I do not have experienced any problems with theese apps removed.
-If you want to get back an app, you just have to use -r instead of -a in the command.
+So far I do not have experienced any problems with these apps removed.
+If you want to get back an app, you just have to use the ``-r`` instead of ``-a`` option.
 Please pay attention to [these instructions](https://github.com/Nanolx/NanoDroid/blob/master/doc/NanoDroidOverlay.md)
 
 ## Using the quite common way of uninstalling apps for user 0.
 If you have not installed Nanodroid or do not want to use the overlay feature, you can also uninstall the unwanted system apps for user 0.
-I took the other way, so I cannot guarantee for this way. But it is quite common for other devices, too.
-The drawback is, that the apps cannot be reinstalled that easy.
+I took the other way, so I cannot guarantee this way will work. But it is quite common for other devices, too.
+The drawback is, that apps cannot be reinstalled that easy.
+
+Let's do it! Login to a shell on your mobile and gain root access:
+```
+adb shell
+su
+```
+If requested, grant root access again.
+Now you can copy paste the following list to the terminal and the apps in the list will get "removed".
+If you want to keep an app like FaceUnlock, you must skip this one from the list below.
+
 ```
 pm uninstall -k --user 0 com.hct.gamemode
 pm uninstall -k --user 0 com.hct.userguide
