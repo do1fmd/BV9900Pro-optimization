@@ -18,7 +18,7 @@ sudo apt -y install adb fastboot
 ```
 
 # Installing SP-Flash tool
-First of all, you need to install [SP-Flash tool](https://spflashtool.com/download/) and have the right Scatter file available (which can be found in the firmware).
+First of all, you need to install [SP-Flash tool](https://spflashtool.com/download/) and have the right Scatter file available (which can be found in the firmware [or here](resources/MT6779_Android_scatter.txt)).
 If you want to backup your device, open option.ini and in the \[ReadBack\] section change _ShowByScatter_ to true:
 
 ```
