@@ -138,3 +138,24 @@ At the bottom you will find two buttons. The left one looks like mechanical tool
 
 # Debolating
 Instead of deleting system apps directly, I would recommend to deactivate them in the settings screen or  uninstall them by ``pm uninstall -k --user 0`` or with Nanodroid-Overlay.
+First I will give a list, which apps can be simply deactivated in the Android settings.
+If you cannot find the app (e.g. your phone is not in English), you can use the app [apps_Packages Info from F-Droid](https://f-droid.org/de/packages/com.oF2pks.applicationsinfo/).
+Type in the apk name (in brackets in my list) and you can open the android settings for the searched app.
+ 
+- Youtube (if you don't want to use Youtube vanced) \[com.google.android.youtube]
+- (Google) Assistant \[com.google.android.apps.googleassistant]
+- Home screen tips \[com.android.protips]
+- Gmail \[com.google.android.gm]
+- Duo \[com.google.android.apps.tachyon]
+- Basic Daydreams \[com.android.dreams.basic]
+- Digital Wellbeing \[com.google.android.apps.wellbeing]
+- (Google) Fit \[com.google.android.apps.fitness]
+- Call Log Backup/Restore \[com.android.calllogbackup]
+- Google Play Movies & TV \[com.google.android.videos]
+- (Google) Photos \[com.google.android.apps.photos]
+- (Google) Calendar \[com.google.android.calendar]
+- com.android.providers.partnerbookmarks \[com.android.providers.partnerbookmarks]
+- Android Auto \[com.google.android.projection.gearhead]
+- Google Keep \[com.google.android.keep]
+- Google Location History \[com.google.android.gms.location.history]
+- Youtube Music \[com.google.android.apps.youtube.music]
