@@ -138,6 +138,7 @@ At the bottom you will find two buttons. The left one looks like mechanical tool
 
 # Debolating
 Instead of deleting system apps directly, I would recommend to deactivate them in the settings screen or  uninstall them by ``pm uninstall -k --user 0`` or with Nanodroid-Overlay.
+## Deactivate unwanted apps
 First I will give a list, which apps can be simply deactivated in the Android settings.
 If you cannot find the app (e.g. your phone is not in English), you can use the app [apps_Packages Info from F-Droid](https://f-droid.org/de/packages/com.oF2pks.applicationsinfo/).
 Type in the apk name (in brackets in my list) and you can open the android settings for the searched app.
@@ -159,3 +160,68 @@ Type in the apk name (in brackets in my list) and you can open the android setti
 - Google Keep \[com.google.android.keep]
 - Google Location History \[com.google.android.gms.location.history]
 - Youtube Music \[com.google.android.apps.youtube.music]
+
+To debloat the other apps, you have two ways.
+With nanodroid-overlay you can put an empty overlay over the system apps. In that way Android cannot "see" the app any more.
+I took this way. The other way is described below by uninstalling the app for user 0.
+## Using nanodroid-overlay
+This method is only working, if you installed Nanodroid as described above.
+
+Login to a shell on your mobile and gain root access:
+```
+adb shell
+su
+```
+If requested, grant root access again.
+Now you can copy paste the following list to the terminal and the apps in the list will get "removed".
+If you want to keep an app like FaceUnlock, you must skip this one from the list below.
+```
+nanodroid-overlay -a HctGameMode
+nanodroid-overlay -a HctUserGuide
+nanodroid-overlay -a HctBlackView
+nanodroid-overlay -a HctChlidMode
+nanodroid-overlay -a AdupsFota
+nanodroid-overlay -a AdupsPrivacyPolicy
+nanodroid-overlay -a VZWRemoteSimlockService
+nanodroid-overlay -a MtkCapCtrl
+nanodroid-overlay -a MDMConfig
+nanodroid-overlay -a MDMLSample
+nanodroid-overlay -a AutoDialer
+nanodroid-overlay -a ChromeCustomizations
+nanodroid-overlay -a WallpaperBackup
+nanodroid-overlay -a WallpaperCropper
+nanodroid-overlay -a HctNotepad
+nanodroid-overlay -a DKFileTrans
+nanodroid-overlay -a ATMWifiMeta
+nanodroid-overlay -a ManagedProvisioning
+nanodroid-overlay -a FaceUnlock
+```
+So far I do not have experienced any problems with theese apps removed.
+If you want to get back an app, you just have to use -r instead of -a in the command.
+Please pay attention to [these instructions](https://github.com/Nanolx/NanoDroid/blob/master/doc/NanoDroidOverlay.md)
+
+## Using the quite common way of uninstalling apps for user 0.
+If you have not installed Nanodroid or do not want to use the overlay feature, you can also uninstall the unwanted system apps for user 0.
+I took the other way, so I cannot guarantee for this way. But it is quite common for other devices, too.
+The drawback is, that the apps cannot be reinstalled that easy.
+```
+pm uninstall -k --user 0 com.hct.gamemode
+pm uninstall -k --user 0 com.hct.userguide
+pm uninstall -k --user 0 com.hct.blackviewhome
+pm uninstall -k --user 0 com.hct.chlidmode
+pm uninstall -k --user 0 com.adups.fota
+pm uninstall -k --user 0 com.adups.privacypolicy
+pm uninstall -k --user 0 com.verizon.remoteSimlock
+pm uninstall -k --user 0 com.mediatek.capctrl.service
+pm uninstall -k --user 0 com.mediatek.mdmconfig
+pm uninstall -k --user 0 com.mediatek.mdmlsample
+pm uninstall -k --user 0 com.mediatek.autodialer
+pm uninstall -k --user 0 com.android.partnerbrowsercustomizations.example
+pm uninstall -k --user 0 com.android.wallpaperbackup
+pm uninstall -k --user 0 com.android.wallpapercropper
+pm uninstall -k --user 0 com.mediatek.todos
+pm uninstall -k --user 0 com.blackview.filetrans
+pm uninstall -k --user 0 com.mediatek.atmwifimeta
+pm uninstall -k --user 0 com.android.managedprovisioning
+pm uninstall -k --user 0 com.elephanttek.faceunlock
+```
