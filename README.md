@@ -88,3 +88,8 @@ nanodroid-overlay -a GoogleServicesFramework
 reboot
 ```
 Now the phone will reboot.
+
+Open Magisk manager again and proceed to MagiskHide. Search for the entries "microG DroidGuard Helper", "microG Services Core" and "microG Services Framework Proxy". Click on the name (not the checkbox!) of each and disable the appearing sliders from all these apps mentioned.
+Now go to the module section of Magisk manager again and install "MagiskHide Props Config" from the Magisk repository.
+Reboot the mobile phone.
+Check if MagiskHide Props Config is enabled. If not, enable it and reboot again.
