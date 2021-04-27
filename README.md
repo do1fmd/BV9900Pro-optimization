@@ -4,7 +4,7 @@ Unfortunately the software is not running very well. This is a guide, how I got 
 Anyhow, I am not responsible, if you will damage your phone! You are continuing at your own risk!
 By the way, all your data will be lost when unlocking the bootloader!
 
-If you follow this guide, you hopefully will get a working rooted BV9900 Pro with MicroG and mostly debloated.
+If you follow this guide, you hopefully will get a working rooted BV9900 Pro with MicroG (via Nanodroid) and mostly debloated.
 In this guide I am working with official firmware version BV9900Pro_EEA_S900AA_V1.0_20201105V07.
 Blackview uploaded this version to MEGA and it can be found here: [Download](https://mega.nz/file/vLAnzQDb#AASpRKEQwCOhKTNXtxAPVX2nocLnCZgUdgeFxwDfzg4)
 Since you should not trust any random links, I will give you the [source here](https://bbs.blackview.hk/viewtopic.php?f=300&t=538469&start=170)
@@ -26,11 +26,6 @@ Afterwards mark the checkbox at the beginning of each partition. Again leave out
 Now connect the switched-off phone to PC while holding the Vol-Up button.
 The readback will take some time.
 
-# Update Firmware (not necessary)
-You can now update (and also downgrade) the firmware of your BV9900 Pro with SP Flash tools.
-I recommend [https://www.getdroidtips.com/flash-stock-firmware-using-sp-flash-tool/](this guide), if you want to flash a new firmware.
-
-
 # Unlocking Bootloader
 Go to the settings, "About phone" and press the Build number at least 10 times in a row.
 Now head back to the settings menu -> System. There you will find the new entry "Developer options".
@@ -39,8 +34,31 @@ Open terminal and run **adb reboot bootloader** to enter fastboot mode. Alternat
 Open terminal on your PC and run **fastboot flashing unlock**
 Your device will wipe all your userdata now.
 
+# Update Firmware (not necessary)
+You can now update (and also downgrade) the firmware of your BV9900 Pro with SP Flash tools.
+I recommend [https://www.getdroidtips.com/flash-stock-firmware-using-sp-flash-tool/](this guide), if you want to flash a new firmware.
+
 # Rooting BV9900 Pro with Magisk
 Boot to the Android system again.
 Download the [https://github.com/topjohnwu/Magisk/releases](Magisk-Manager APK) and install it with **adb install Magisk-v22.1.apk** (you have to change the version number accordingly to your downloaded file).
 Put the boot.img (from backup or from downloaded firmware) to your device memory (r.g. internal SD card). Make sure that the boot.img fits to your installed firmware version!
-, launch Magisk manager and patch the boot image. You can easily follow [this guide](https://www.droidwin.com/patch-stock-boot-image-flash-magisk/).
+Launch Magisk manager and patch the boot image. You can easily follow [this guide](https://www.droidwin.com/patch-stock-boot-image-flash-magisk/).
+Copy the patched boot.img to your PC again and restart to Fastboot mode.
+
+Also download this emtpy vbmeta file. Otherwise you will be caught in a bootloop, when you flash the patched Magisk boot image.
+Now flash the magisk_patched_boot.img and also the empty vbmeta:
+``
+fastboot flash boot magisk_patched_boot.img
+fastboot --disable-verity --disable-verification flash vbmeta vbmeta.img
+fastboot reboot
+``
+Open Magisk Manager and check, of Magisk is running fine.
+Well done! You have rooted your device!
+
+# Installing Nanodroid
+To get rid of Google Services, you can install Nanodroid and MicroG now.
+## Activate Signature spoofing
+Nanodroid needs signature spoofing, if you want to use the Google Play Store.
+Download the last version of NanoDroid-patcher (e.g. _NanoDroid-patcher-23.1.2.20210117.zip_) and the full-package (e.g. _NanoDroid-23.1.2.20210117.zip_) from [https://downloads.nanolx.org/NanoDroid/Stable/](Nanodroid download page).
+Put both files on your android device (e.g. internal SD).
+Download 
