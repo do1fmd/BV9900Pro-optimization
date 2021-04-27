@@ -33,6 +33,7 @@ Here you can unlock the bootloader by activating "OEM unlocking" and also enable
 Open terminal and run **adb reboot bootloader** to enter fastboot mode. Alternatively you can switch off the phone and press Volume Up + Power to enter a boot menu. Chose fastboot mode with Volume Up button here and confirm that with Volume Down.
 Open terminal on your PC and run **fastboot flashing unlock**
 Your device will wipe all your userdata now.
+Go back to developers section and make sure "USB debugging" is still enabled.
 
 # Update Firmware (not necessary)
 You can now update (and also downgrade) the firmware of your BV9900 Pro with SP Flash tools.
@@ -69,3 +70,21 @@ adb shell
 su
 cp external_sd/sdcard0/.nanodroid-setup /data/
 ```
+Open Magisk Manager, proceed to the modules section and click **Install from storage.**
+Chose the Nanodroid-patcher zip file and flash it.
+Reboot the phone.
+Make sure the module "NanoDroid Patcher" is enabled in the Magisk module section. If not, enable it and reboot again.
+If you want, you can use [Signature Spoofing Checker](https://f-droid.org/de/packages/lanchon.sigspoof.checker/) to check, if signature spoofing is enabled now.
+## Install Nanodroid 
+Again, open the Magisk module section and click **Install from storage** again. This time choose the Nanodroid-full-package and flash it.
+Reboot again, check if it is enabled and if not enable it and reboot again.
+## Remove Stock Google Services
+To remove the stock google services and use MicroG in future, enter the following commands (and grant root access, when requested):
+```
+adb shell
+su
+nanodroid-overlay -a GmsCore
+nanodroid-overlay -a GoogleServicesFramework
+reboot
+```
+Now the phone will reboot.
