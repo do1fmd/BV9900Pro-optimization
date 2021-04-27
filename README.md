@@ -47,11 +47,11 @@ Copy the patched boot.img to your PC again and restart to Fastboot mode.
 
 Also download this emtpy vbmeta file. Otherwise you will be caught in a bootloop, when you flash the patched Magisk boot image.
 Now flash the magisk_patched_boot.img and also the empty vbmeta:
-``
+```
 fastboot flash boot magisk_patched_boot.img
 fastboot --disable-verity --disable-verification flash vbmeta vbmeta.img
 fastboot reboot
-``
+```
 Open Magisk Manager and check, of Magisk is running fine.
 Well done! You have rooted your device!
 
@@ -63,9 +63,9 @@ Download the last version of NanoDroid-patcher (e.g. _NanoDroid-patcher-23.1.2.2
 Put both files on your android device (e.g. internal SD).
 Download [.nanodroid-setup](./resources/.nanodroid-setup) and [modify](https://gitlab.com/Nanolx/NanoDroid/-/blob/master/doc/AlterInstallation.md) it to your needs.
 Explanation of the parameters can be found [here](https://gitlab.com/Nanolx/NanoDroid/-/blob/master/doc/AlterInstallation.md).
-Put that file to the sd card. To make sure nanodroid will find the .nanodroid-setup, you can copy this file to /data, too. Use the following commands:
-``
+Put that file to the sd card. To make sure nanodroid will find the .nanodroid-setup, you can copy this file to /data, too. Use the following commands (grant root access, when requested):
+```
 adb shell
 su
 cp external_sd/sdcard0/.nanodroid-setup /data/
-``
+```
