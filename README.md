@@ -243,3 +243,7 @@ pm uninstall -k --user 0 com.mediatek.atmwifimeta
 pm uninstall -k --user 0 com.android.managedprovisioning
 pm uninstall -k --user 0 com.elephanttek.faceunlock
 ```
+
+# Other common bugs and fixes
+There are some more bugs users are facing while working with the phone.
+I collected them [here](other%20bugfixes.md).
