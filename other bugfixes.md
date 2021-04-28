@@ -11,3 +11,5 @@ Open a shell on your mobile (``adb shell``) and run the following command:
 ```
 pm uninstall --user 0 com.mediatek.factorymode
 ```
+## Apps are not working properly or killed regularly
+[Solution here](/README.md#fixed-apps-are-not-working-properly-or-killed-regularly)
