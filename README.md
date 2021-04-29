@@ -41,7 +41,7 @@ Open terminal and run ``adb reboot bootloader`` to enter fastboot mode. Alternat
 Open terminal on your PC and run ``astboot flashing unlock``. Now reboot your phone by executing ``fastboot reboot``.
 All your usedata will get wiped now.
 
-# Update Firmware (Not mandatory)
+# Update Firmware (Not mandatory, if Android 10 is already installed)
 You can now update (and also downgrade) the firmware of your BV9900 Pro with SP Flash tools.
 I recommend [this guide](https://www.getdroidtips.com/flash-stock-firmware-using-sp-flash-tool/), if you want to flash a different firmware.
 
