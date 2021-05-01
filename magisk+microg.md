@@ -125,5 +125,5 @@ and choose _2 - post-fs-data_. again.
 
 # Finished
 Well done, you should now have a working BV9900 Pro with Root and Nanodroid installed.
-You should have a look at [well known bugs and their solutions](/other%20bugfixes.md). 
+You should have a look at [well known bugs and their solutions](/bugfixes.md). 
 Afterwards you can start [Debloating](/debloat.md).
