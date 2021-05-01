@@ -11,7 +11,7 @@ Remember, do not trust any random links! Check the [source here](https://bbs.bla
 Before you flash this firmware, dial \*#8615# and check, if your fingerprint shows _Goodix_ or _sunwave_. If it shows _Goodix_ stop now and do not follow this guide any more, since fingerprint will stop working, if you upgrade to Android 10 and I am not sure, if this guid will work for Android 9!
 
 # Prerequirements
-Make sure you have installed and working adb and fastboot!
+Make sure you have a working installation of adb and fastboot!
 If you use Ubuntu, you can easily install it by running
 ```
 sudo apt -y install adb fastboot
