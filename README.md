@@ -147,4 +147,4 @@ If you want to debloat your phone, continue [here](/debloat.md).
 
 # Other common bugs and fixes
 There are some more bugs users are facing while working with the phone.
-I collected them [here](other%20bugfixes.md).
+I collected them [here](bugfixes.md).
