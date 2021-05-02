@@ -16,6 +16,7 @@ If you use Ubuntu, you can easily install it by running
 ```
 sudo apt -y install adb fastboot
 ```
+If you are using Windows, maybe you also have to install the MTK drivers.
 
 # Install SP-Flash tool
 First of all, you should install [SP-Flash tool](https://spflashtool.com/download/) for upgrades and backups and have the right Scatter file by hand (which can be found in the firmware [or here](resources/MT6779_Android_scatter.txt)).
