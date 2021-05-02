@@ -1,4 +1,4 @@
-# Well know bugs and fixes
+# Well know bugs and fixes for BV9900 Pro
 Here you will find some well known bugs and fixes, which do not affect all customers.
 Disclaimer: I am not responsible for any damage to your device, if you follow these steps here!
 
