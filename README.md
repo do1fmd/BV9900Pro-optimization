@@ -33,7 +33,7 @@ Afterwards mark the checkbox at the beginning of each partition. Again leave out
 Now connect the switched-off phone to PC while holding the Vol-Up button.
 The readback will take some time.
 
-# Unlocking Bootloader
+# Unlock Bootloader
 Go to the settings, "About phone" and press the Build number at least 10 times in a row.
 Now head back to the settings menu -> System. There you will find the new entry "Developer options".
 Here you can unlock the bootloader by activating "OEM unlocking" and also enable "USB debugging".
@@ -49,7 +49,7 @@ I recommend [this guide](https://www.getdroidtips.com/flash-stock-firmware-using
 If you want to Root your phone, you can follow [this guide](/magisk+microg.md). There you also have the instructions how to get rid of Google Services and replace them by MicroG.
 
 
-# Debolating
+# Debolat
 If you want to debloat your phone, continue [here](/debloat.md).
 
 # Other common bugs and fixes
