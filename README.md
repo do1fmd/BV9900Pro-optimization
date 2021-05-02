@@ -2,7 +2,7 @@
 The Blackview BV9900 Pro is a very good outdoor smartphone with very good hardware specifications.
 Unfortunately the software is not running very well. This is a guide, how I got my phone properly working and got rid of most software proplems.
 Anyhow, I am not responsible, if you will damage your phone! You are continuing at your own risk!
-By the way, all your data will be lost when unlocking the bootloader!
+By the way, all your data will be lost when unlocking the bootloader! You should have a backup in place!
 
 If you follow this guide, you hopefully will get a working rooted BV9900 Pro with MicroG (via Nanodroid) and mostly debloated.
 In this guide I am working with official **EEA** firmware version BV9900Pro_EEA_S900AA_V1.0_20201105V07.
