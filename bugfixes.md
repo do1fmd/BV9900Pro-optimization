@@ -34,7 +34,7 @@ props ro.hct_autostart_manager 0
 ``
 and choose _2 - post-fs-data_. again.
 
-## Apps are not working properly or killed regularly
+## Apps or Notifications are not working properly or killed regularly
 On the phone are two task killers installed, which kill background apps regularly. If an app got killed, it is not possible to receive any messages any more or make any notifications. Even SMS do not get delivered any more, if the SMS app gets killed.
 ### Duraspeed
 The first task killer is called duraspeed. This app does not have an launcher icon and is killing other apps in the background.
