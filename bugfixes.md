@@ -39,7 +39,7 @@ On the phone are two task killers installed, which kill background apps regularl
 ### Duraspeed
 The first task killer is called duraspeed. This app does not have an launcher icon and is killing other apps in the background.
 If you do not get notifications Durapseed may has killed the application. Sometimes duraspeed kills the SMS app und no SMS will be delivered any more.
-The easiest way is to deactivate it. Go to settings, search for _duraspeed_ and click _Open_. Here you can deactivate the app completely, or put other apps on the whitelist.
+The easiest way is to deactivate it. Go to settings, search for _duraspeed_ and click _Open_. Here you can deactivate the app completely, or put some apps on the whitelist.
 ### Another Taskkiller
 There is a second taskkiller installed on the BV9900 Pro. Open any App and swipe with your finger from the button of the screen to the top of the screen and then to the right.
 At the bottom you will find two buttons. The left one looks like mechanical tools. Press it! A window called "white list" will appear. Here you can disable the second task killer completely or put some apps to the white list. I recommend to deactivate it completely.
