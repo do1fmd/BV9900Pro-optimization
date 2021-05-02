@@ -47,6 +47,6 @@ If you want to Root your phone, you can follow [this guide](/magisk+microg.md). 
 # Debolat
 If you want to debloat your phone, continue [here](/debloat.md).
 
-# Other common bugs and fixes
-There are some more bugs users are facing while working with the phone.
-I collected them [here](bugfixes.md).
+# Common bugs and fixes
+There are some bugs users are facing while working with the phone.
+I collected the bugs and fixes [here](bugfixes.md).
