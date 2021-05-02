@@ -34,7 +34,7 @@ Well done! You have rooted your device!
 ## Replace Google Services by Nanodroid/MicroG
 To get rid of Google Services, you can install Nanodroid and MicroG now.
 ### Activate Signature spoofing
-Nanodroid needs signature spoofing, if you want to use the Google Play Store.
+Nanodroid needs signature spoofing, if you want to use the patched version of Google Play Store.
 Download the latest versions of NanoDroid-patcher (e.g. _NanoDroid-patcher-23.1.2.20210117.zip_) and full-package (e.g. _NanoDroid-23.1.2.20210117.zip_) from [Nanodroid download page](https://downloads.nanolx.org/NanoDroid/Stable/).
 Put both files on your android device (e.g. internal SD).
 Download [.nanodroid-setup](./resources/.nanodroid-setup) and [modify](https://gitlab.com/Nanolx/NanoDroid/-/blob/master/doc/AlterInstallation.md) it to your needs.
