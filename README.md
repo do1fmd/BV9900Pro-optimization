@@ -37,6 +37,7 @@ The readback will take some time.
 # Update Firmware (Not mandatory, if Android 10 is already installed)
 You can now update (and also downgrade) the firmware of your BV9900 Pro with SP Flash tools.
 I recommend [this guide](https://www.getdroidtips.com/flash-stock-firmware-using-sp-flash-tool/), if you want to flash a different firmware.
+If you want to install an inofficial or modified firmware, you have to [unlock the bootloader first](/magisk+microg.md#unlock-bootloader).
 
 # Rooting BV9900 Pro with Magisk and get rid of Google Services by installing Nanodroid with MicroG
 If you want to Root your phone, you can follow [this guide](/magisk+microg.md). There you also have the instructions how to get rid of Google Services and replace them by MicroG.
