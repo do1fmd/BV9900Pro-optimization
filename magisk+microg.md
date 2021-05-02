@@ -13,7 +13,7 @@ Open terminal on your PC and run ``fastboot flashing unlock``. Now reboot your p
 All your usedata will get wiped now.
 
 
-## Rooting BV9900 Pro with Magisk
+## Root BV9900 Pro with Magisk
 Boot to the Android system again.
 Go back to developers section and make sure "USB debugging" is still enabled.
 Download the [Magisk-Manager APK](https://github.com/topjohnwu/Magisk/releases) and install it with ``adb install Magisk-v22.1.apk`` (you have to change the version number accordingly to your downloaded file).
@@ -31,7 +31,7 @@ fastboot reboot
 Open Magisk Manager and check, of Magisk is running fine.
 Well done! You have rooted your device!
 
-## Replacing Google Services by Nanodroid/MicroG
+## Replace Google Services by Nanodroid/MicroG
 To get rid of Google Services, you can install Nanodroid and MicroG now.
 ### Activate Signature spoofing
 Nanodroid needs signature spoofing, if you want to use the Google Play Store.
