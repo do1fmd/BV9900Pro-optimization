@@ -9,7 +9,7 @@ Go to the settings, "About phone" and press the Build number at least 10 times i
 Now head back to the settings menu -> System. There you will find the new entry "Developer options".
 Here you can unlock the bootloader by activating "OEM unlocking" and also enable "USB debugging".
 Open terminal and run ``adb reboot bootloader`` to enter fastboot mode. Alternatively you can switch off the phone and press Volume Up + Power to enter a boot menu. Choose fastboot mode with Volume Up button here and confirm that with Volume Down.
-Open terminal on your PC and run ``astboot flashing unlock``. Now reboot your phone by executing ``fastboot reboot``.
+Open terminal on your PC and run ``fastboot flashing unlock``. Now reboot your phone by executing ``fastboot reboot``.
 All your usedata will get wiped now.
 
 
