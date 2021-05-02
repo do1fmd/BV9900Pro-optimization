@@ -84,5 +84,5 @@ There are two very annoying bugs in the original Firmware! Fix them:
 
 ## Finished
 Well done, you should now have a working BV9900 Pro with Root and Nanodroid installed.
-You should have a look at [well known bugs and their solutions](/bugfixes.md). 
+You should have a look at [other well known bugs and their solutions](/bugfixes.md). 
 Afterwards you can start [Debloating](/debloat.md).
