@@ -102,8 +102,8 @@ Last step to finish MicroG setup: Open Google Play and login to your google acco
 
 # Fix 2 big bugs
 There are two very annoying bugs in the original Firmware! Fix them:
-- [Apps won't run, when phone is rebooted](/bugfixes.md#apps-do-not-start-after-boot-magisk-or-at-least-root-needed)
-- [Apps are killed regularly](/bugfixes.md#apps-are-not-working-properly-or-killed-regularly)
+- [Apps do not start after boot](/bugfixes.md#apps-do-not-start-after-boot-magisk-or-at-least-root-needed)
+- [Apps are not working properly or killed regularly](/bugfixes.md#apps-are-not-working-properly-or-killed-regularly)
 
 # Finished
 Well done, you should now have a working BV9900 Pro with Root and Nanodroid installed.
