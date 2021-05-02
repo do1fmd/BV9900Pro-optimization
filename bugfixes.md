@@ -11,9 +11,9 @@ Open a shell on your mobile (``adb shell``) and run the following command:
 ```
 pm uninstall --user 0 com.mediatek.factorymode
 ```
-## Apps do not start after boot
+## Apps do not start after boot (Magisk (or at least Root) needed)
 The BV9900 Pro software has a bug with autostarting apps and widgets after boot. If you use an alarm clock and the phone is rebooted, the alarm clock will not ring any more.
-Also most messanger apps won't work properly. This could be fixed by setting ro.freeme_freemanager and ro.hct_autostart_manager to 0 in build.prop. Instead of editing buid.prop directly, we will use the Magisk plug-in "MagiskHide Props Config".
+Also most messanger apps won't work properly. This could be fixed by setting ro.freeme_freemanager and ro.hct_autostart_manager to 0 in build.prop. Instead of editing buid.prop directly, I would suggest to use the Magisk plug-in "MagiskHide Props Config".
 Go to the module section of Magisk manager again and install "MagiskHide Props Config" from the Magisk repository.
 Reboot the mobile phone.
 Check if MagiskHide Props Config is enabled. If not, enable it and reboot again.
