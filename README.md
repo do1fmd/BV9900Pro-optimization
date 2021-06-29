@@ -10,6 +10,8 @@ Blackview uploaded this version to MEGA and it can be found [here](https://mega.
 Remember, do not trust any random links! Check the [source and link to non-EEA-version here](https://bbs.blackview.hk/viewtopic.php?f=300&t=538469&start=170#p999471).
 Before you flash this firmware, dial \*#8615# and check, if your fingerprint shows _Goodix_ or _sunwave_. **If it shows _Goodix_ stop now** and do not follow this guide any more, since fingerprint will stop working, if you upgrade to Android 10 and I am not sure, if this guid will work for Android 9!
 
+If you have some improvement suggestions or questions, you can open an issue / pull request or let me know in [this thread on xda-developers](https://forum.xda-developers.com/t/root-microg-bugfixes-for-bv9900-pro.4270995/).
+
 # Prerequirements
 Make sure you have a working installation of adb and fastboot!
 If you use Ubuntu, you can easily install it by running
@@ -50,3 +52,5 @@ If you want to debloat your phone, continue [here](/debloat.md).
 # Common bugs and fixes
 There are some bugs users are facing while working with the phone.
 I collected the bugs and fixes [here](bugfixes.md).
+
+Unfortunately I could not fix all bugs, yet. The still known problems are collected [here](to-fix.md).
