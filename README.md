@@ -46,7 +46,7 @@ If you want to install an inofficial or modified firmware, you have to [unlock t
 If you want to Root your phone, you can follow [this guide](/magisk+microg.md). There you also have the instructions how to get rid of Google Services and replace them by MicroG.
 
 
-# Debolat
+# Debloat
 If you want to debloat your phone, continue [here](/debloat.md).
 
 # Common bugs and fixes
