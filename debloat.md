@@ -1,4 +1,4 @@
-# Debolating
+# Debloating
 The BV9900 Pro comes with over 200 Apps preinstalled.
 Of course, not all of them are necessary. So, I decided to uninstall some of them.
 I want to point out again, that this instructions are made for Firmware version BV9900Pro_EEA_S900AA_V1.0_20201105V07.
