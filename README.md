@@ -51,7 +51,7 @@ Save the scatter file and you are ready to include the data partition in your ba
 Switch off your phone and open SP Flash tool. In Download section open the correct scatter file and move to the section "Readback".
 Leave out partitions without partition name. For each partition with partition name you should give a recognisable filename to the backup file (e.g. _partitionname_.img) by double-click the partition. In the first window enter the filename. For the second window just press ESC. Do not change any values here!
 Afterwards mark the checkbox at the beginning of each partition. Again leave out partitions with empty partition name and click the "Read Back" button.
-Now connect the switched-off phone to PC while holding the Vol-Up button.
+Now connect the switched-off phone to PC <s>while holding the Vol-Up button</s>.
 The readback will take some time.
 
 
