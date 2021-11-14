@@ -29,8 +29,26 @@ If you want to backup your device, open option.ini and in the _\[ReadBack\]_ sec
 ShowByScatter=true
 ```
 
+# Preparations for backing up the data partition
+If you do not want to make a backup of your data partition, you can safely skip this section.
+
+The default scatter file will not cover the whole data partition. If you do a dump with default Scatter file, only a few bytes will be saved and the recovered partition won't be readable.
+If you want to backup the data partition open the Scatter file, search for line 
+```
+partition_name: userdata
+```
+and proceed further to the next line starting with _partition_size:_. This should be at line number 745.
+Usually it is given the value ```0xc0000000``` there. Change the line to 
+```
+partition_size: 0x1BD7400000
+```
+Save the scatter file and you are ready to include the data partition in your backup.
+
+<sub>_Credits for this section goes to [f1cscari](https://github.com/do1fmd/BV9900Pro-optimization/issues/3)_</sub>
+
+
 # Backup (Recommended but not mandatory)
-Switch off your phone and open SP Flash tool. In Download section open the correct scatter file and move on the section "Readback".
+Switch off your phone and open SP Flash tool. In Download section open the correct scatter file and move to the section "Readback".
 Leave out partitions without partition name. For each partition with partition name you should give a recognisable filename to the backup file (e.g. _partitionname_.img) by double-click the partition. In the first window enter the filename. For the second window just press ESC. Do not change any values here!
 Afterwards mark the checkbox at the beginning of each partition. Again leave out partitions with empty partition name and click the "Read Back" button.
 Now connect the switched-off phone to PC while holding the Vol-Up button.
