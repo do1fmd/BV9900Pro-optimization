@@ -30,7 +30,7 @@ ShowByScatter=true
 ```
 
 # Preparations for backing up the data partition
-If you do not want to make a backup of your data partition, you can safely skip this section.
+_If you do not want to include your data partition in your backups, you can safely skip this section._
 
 The default scatter file will not cover the whole data partition. If you do a dump with default Scatter file, only a few bytes will be saved and the recovered partition won't be readable.
 If you want to backup the data partition open the Scatter file, search for line 
