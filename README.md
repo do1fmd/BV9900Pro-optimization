@@ -37,8 +37,8 @@ If you want to backup the data partition open the Scatter file, search for line
 ```
 partition_name: userdata
 ```
-and proceed further to the next line starting with _partition_size:_. This should be at line number 745.
-Usually it is given the value ```0xc0000000``` there. Change the line to 
+and proceed further to the next line starting with ```partition_size:```. This should be at line number 745.
+Usually it is given the value ```0xc0000000``` there. Change this line to 
 ```
 partition_size: 0x1BD7400000
 ```
