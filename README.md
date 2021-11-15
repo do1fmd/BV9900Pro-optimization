@@ -30,15 +30,33 @@ ShowByScatter=true
 ```
 
 # Preparations for backing up the data partition
-_If you do not want to include your data partition in your backups, you can safely skip this section._
+**Be aware: If you include the data partition in your backup, the backup will take about 50 minutes and the backuped data partition will be 111 GB. Since the partition is encrypted, it is not possible to truncate the backup.
+If you do not want to include your data partition in your backups, you can safely skip this section.**
 
-The default scatter file will not cover the whole data partition. If you do a dump with default Scatter file, only a few bytes will be saved and the recovered partition won't be readable.
+The default scatter file will not cover the whole data partition. If you do a dump with default Scatter file, only a few bytes will be saved and the recovered partition won't be readable. The phone will do a factory reset, if the data partition is not readable.
+
 If you want to backup the data partition open the Scatter file, search for line 
 ```
 partition_name: userdata
 ```
 and proceed further to the next line starting with ```partition_size:```. This should be at line number 745.
 Usually it is given the value ```0xc0000000``` there. Change this line to 
+```
+partition_size: 0x1BD7400000
+```
+Search again for next line
+```
+partition_name: userdata
+```
+and proceed further to the next line starting with ```partition_size:```. This should be at line number 1523.
+Change it accordingly from 
+<s>
+```
+partition_size: 0xc0000000
+```
+</s>
+to
+
 ```
 partition_size: 0x1BD7400000
 ```
