@@ -44,4 +44,15 @@ The easiest way is to deactivate it. Go to settings, search for _duraspeed_ and 
 There is a second taskkiller installed on the BV9900 Pro. Open any App and swipe with your finger from the button of the screen to the top of the screen and then to the right.
 At the bottom you will find two buttons. The left one looks like mechanical tools. Press it! A window called "white list" will appear. Here you can disable the second task killer completely or put some apps to the white list. I recommend to deactivate it completely.
 
+## The other party cannot hear you properly while calling
+The noise cancellation feature should reduce background noise and should give a clearer voice.
+Unfortunately that system seems to be buggy.
+It seems to be best to turn it off. Unfortunately it will be turned back on after reboot. **These steps must therefore be repeated after each boot.**
 
+1. Open the stock dialer
+2. Click on the three dots (upper right corner)
+3. Choose ```Settings```
+4. Choose ```Accessibility```
+5. Turn of Noise Reduction
+
+_If someone finds out how to do this automatically, please let me know._
