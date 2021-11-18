@@ -55,4 +55,4 @@ It seems to be best to turn it off. Unfortunately it will be turned back on afte
 4. Choose ```Accessibility```
 5. Turn of Noise Reduction
 
-_If someone finds out how to do this automatically, please let me know._
+<sub>_If someone finds out how to do this automatically, please let me know._</sub>
