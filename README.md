@@ -29,7 +29,7 @@ If you want to backup your device, open option.ini and in the _\[ReadBack\]_ sec
 ShowByScatter=true
 ```
 
-# Preparations for backing up the data partition
+# Preparations for backing up the data partition (not mandatory)
 **Be aware: If you include the data partition in your backup, the backup will take about 50 minutes and the backuped data partition will be 111 GB. Since the partition is encrypted, it is not possible to truncate the backup.
 If you do not want to include your data partition in your backups, you can safely skip this section.**
 
